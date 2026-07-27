@@ -1,8 +1,28 @@
 aid: frontrow
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/frontrow.png
 name: Frontrow
-description: Frontrow is a company surfaced as a portfolio company of lightspeed-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  FrontRow was an India-based edtech company that operated an online learning
+  platform teaching extracurricular skills and hobbies — such as music, singing,
+  guitar, drawing, chess and other creative pursuits — to learners through
+  recorded video courses and community-driven classes. The company was backed by
+  Lightspeed Venture Partners. As of the last enrichment pass the product has
+  shut down: its primary domain frontrow.co.in 301-redirects to a Medium
+  shutdown announcement confirming "FrontRow shut down a few months ago," and no
+  developer portal, public API, documentation, or SDK surface exists. This entry
+  is retained as a defunct portfolio-lead record; there are no live API artifacts
+  to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/frontrow/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +30,31 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-source: https://medium.com/@frontrowblog/frontrow-update-6ac848595ed2
+x-status-checked: '2026-07-19'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Education
+- EdTech
+- E-Learning
+- Online Learning
+- India
+- Defunct
 apis: []
+common:
+- type: Blog
+  url: https://medium.com/@frontrowblog
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
